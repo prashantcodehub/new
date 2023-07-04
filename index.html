@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Student MS</title>
+</head>
+<body>
+    <h1>Student Managemant CRUD</h1>
+    <!-- Student detail input section -->
+    <form class="container"  id="STform"> 
+        <!-- action="" method="post" -->
+        <div class="row1">
+            <input type="hidden" id="student-id">
+            <input type="text" class="BOX" id="name" 
+            placeholder="Name">
+
+            <input type="email" class="BOX" id="email" placeholder="Email">
+
+            <input type="number" class="BOX" id="GPA" placeholder="GPA">
+
+        </div>
+
+        <div class="row2">
+
+            <input type="number" class="BOX" id="age" placeholder="Age">
+
+            <input type="text" class="BOX" id="degree" placeholder="Degree">
+
+        </div>
+        <!-- ADD or EDIT button -->
+        <div class="row3">
+
+            <button type="submit" id="addSt" class="addStudent">Add Student</button>
+
+        </div>
+
+    </form>
+    <!-- END -->
+
+    <!-- search section -->
+    <div class="searchArea">
+
+        <input type="text" class="search" id="SearchInputTEXT" placeholder="Search By Name, email or degree">
+
+    </div>
+    <!-- END -->
+
+    <!-- TABLE -->
+    <div class="Displaytable">
+
+        <table class="tablebodyACT">
+
+            <thead>
+                <tr class="threadTR">
+                    <th> ID </th>
+                    <th> Student Name </th>
+                    <th> Email </th>
+                    <th> Age </th>
+                    <th> GPA </th>
+                    <th> Degree </th>
+                </tr>
+            </thead>
+
+            <tbody id="StuTb">
+                
+            </tbody>
+        </table>
+
+    </div>
+    <!-- END -->
+    <script src="app.js"></script>
+</body>
+</html>
